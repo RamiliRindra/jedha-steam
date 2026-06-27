@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Steam's videogames platform</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111827;
+      background: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin-top: 1.6em;
+      margin-bottom: 0.7em;
+    }
+    h1 { font-size: 2rem; margin-top: 0.5em; }
+    h2 { font-size: 1.45rem; }
+    h3 { font-size: 1rem; }
+    p { margin: 0.8em 0; }
+    ul { margin: 0.6em 0 1.1em 1.5em; padding: 0; }
+    li { margin: 0.65em 0; }
+    code {
+      background: #f3f4f6;
+      padding: 0.15em 0.35em;
+      border-radius: 4px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 0.95em;
+      font-weight: 600;
+    }
+    .logo {
+      text-align: center;
+      font-size: 2.1rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      margin: 1.1em 0;
+    }
+    .meta { color: #374151; font-size: 0.95rem; }
+    .note { margin-top: 1.4em; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="meta">Project : Steam's videogames platform 🎮</p>
+    <h1>Steam's videogames platform 🎮 <span class="meta">960 min</span></h1>
+
+    <div class="logo">STEAM</div>
+
+    <h2>Company's description 📰</h2>
+    <p><strong>Steam</strong> is a <u>video game digital distribution</u> service and storefront from <u>Valve</u>. It was launched as a software client in September 2003 to provide game updates automatically for Valve's games, and expanded to distributing third-party titles in late 2005. Steam offers various features, like <u>digital rights management</u> (DRM), <u>game server matchmaking</u> with <u>Valve Anti-Cheat</u> measures, <u>social networking</u>, and <u>game streaming</u> services. Steam client's functions include game update automation, cloud storage for <u>game progress</u>, and community features such as direct messaging, in-game overlay functions and a virtual <u>collectable</u> marketplace.</p>
+
+    <h2>Project 🚧</h2>
+    <p>You're working for <u>Ubisoft</u>, a French video game publisher. They'd like to release a new revolutionary videogame! They asked you conduct a global analysis of the games available on Steam's marketplace in order to better understand the videogames ecosystem and today's trends.</p>
+
+    <h2>Goals 🎯</h2>
+    <p>The ultimate goal of this project is to understand what factors affect the popularity or sales of a video game. But your boss asked you to take advantage of this opportunity to analyze the video game market globally.</p>
+
+    <p>To carry out this project, you will have to adopt different levels of analysis. Your boss gave you a list of examples of questions that would be interesting:</p>
+
+    <h3>Analysis at the "macro" level</h3>
+    <ul>
+      <li>Which publisher has released the most games on Steam?</li>
+      <li>What are the best rated games?</li>
+      <li>Are there years with more releases? Were there more or fewer game releases during the Covid, for example?</li>
+      <li>How are the prices distributed? Are there many games with a discount?</li>
+      <li>What are the most represented languages?</li>
+      <li>Are there many games prohibited for children under 16/18?</li>
+    </ul>
+
+    <h3>Genres analysis</h3>
+    <ul>
+      <li>What are the most represented genres?</li>
+      <li>Are there any genres that have a better positive/negative review ratio?</li>
+      <li>Do some publishers have favorite genres?</li>
+      <li>What are the most lucrative genres?</li>
+    </ul>
+
+    <h3>Platform analysis</h3>
+    <ul>
+      <li>Are most games available on Windows/Mac/Linux instead?</li>
+      <li>Do certain genres tend to be preferentially available on certain platforms?</li>
+    </ul>
+
+    <p>You're free to follow these guidelines, or to choose a different angle of analysis, as long as your analysis reveals relevant and useful information. 🙂</p>
+
+    <h2>Scope of this project 🖼️</h2>
+    <p>You'll have to use <strong>Databricks</strong> and <strong>PySpark</strong> to conduct this EDA. Particularly, you'll have to use <u>Databrick's visualisation tool</u> to create the visualizations.</p>
+
+    <p>The dataset is available in our S3 bucket at the following url: <code>s3://full-stack-bigdata-datasets/Big_Data/Project_Steam/steam_game_output.json</code></p>
+
+    <h2>Helpers 🦒</h2>
+    <p>To help you achieve this project, here are a few tips that should help you:</p>
+    <ul>
+      <li>To adopt different levels of analysis, it might be useful to create different dataframes.</li>
+      <li>As the dataset is semi-structured with a <strong>nested schema</strong>, Pyspark's methods such as <code>getField()</code> and <code>explode()</code> may help you.</li>
+      <li>There are some text and date fields in this dataset: Pyspark offers utilitary functions to manipulate these types of data efficiently 💡</li>
+      <li>You can use aggregate functions and <code>groupBy</code> to conduct segmented analysis.</li>
+    </ul>
+
+    <h2>Deliverable 📬</h2>
+    <p>To complete this project, you should deliver:</p>
+    <ul>
+      <li>One or several notebooks including data manipulation with PySpark and data visualization with Databrick's dashboarding tool.</li>
+      <li>To make sure the jury can view all the visualizations, please use the "publish" button on Databricks notebooks to create a public url where a copy of your notebook will be available.</li>
+      <li>While using the "publish" button, Databricks may tell you that your notebook's size exceeds the maximal size allowed. If this happens, just split your notebook in several notebooks.</li>
+      <li>Please copy-paste the link(s) to your published notebooks into your Github repo such that the jury can access it easily. 🙂</li>
+    </ul>
+  </main>
+</body>
+</html>
